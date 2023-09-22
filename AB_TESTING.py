@@ -205,7 +205,6 @@ print('Test Stat = %.4f, p-value = %.4f' % (test_stat, pvalue))
 
 # Adım 2: Elde ettiğiniz test sonuçlarına göre müşteriye tavsiyede bulununuz.
 """
-# Tunahan permutasyon test
 def permutation_test(df, num_perm=50000):
     obs_diff = df.loc[df.group == "test"].Purchase.mean() - df.loc[df.group == "control"].Purchase.mean()
     num_of_control = df.loc[df.group == "control"].shape[0]
